@@ -1,0 +1,18 @@
+schema = "chatman.federated-capability-owner.v1"
+version = "26.9.1"
+repository = "seanchatmangpt/dsrust"
+owner_id = "repository:dsrust"
+control_plane_repository = "seanchatmangpt/chatman-ecosystem"
+control_plane_subject = "git:7430dfc9b3ca138e703430d25de7c6f48a8d6ade"
+base_sha = "f24adde08c1d8850e4d7079d019643bb40f905cb"
+allowed_authorities = ["persist_control_plane"]
+simulation_only = false
+ambient_do = false
+automatic_irreversible_do = false
+
+[[capability]]
+id = "capability:compile-bounded-oracle"
+relationship = "owner"
+standing = "CANDIDATE"
+broker_required = false
+receipt_required = true
